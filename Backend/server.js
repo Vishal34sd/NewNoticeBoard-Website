@@ -7,7 +7,8 @@ const noticeRoutes = require('./routes/noticeRoutes');
 const authRoutes = require('./routes/authRoutes');  // ✅ NEW
 
 const app = express();
-app.use(cors());
+app.use(cors({origin: 'notice-frontend-two.vercel.app
+'}));
 app.use(express.json());
 
 // Routes
